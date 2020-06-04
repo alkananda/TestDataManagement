@@ -9,7 +9,6 @@ $dbname="sql12345496";
 $conn = new mysqli($servername, $username, $password, $dbname);
 if(!$conn)
 {
-    echo "No DB found";
     die("Connection failed: " . mysqli_connect_error());
 }
 
