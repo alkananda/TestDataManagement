@@ -3,9 +3,6 @@ include_once 'dbConn.php';
 $noOfTestData = $_POST['noOfTestData'];
 echo $noOfTestData;
 $result = mysqli_query($conn,"SELECT * FROM wp_testing order by 1 asc LIMIT $noOfTestData");
-$row = mysqli_num_rows($result);
-echo "No:of rows:" $row;
-print_r($row);
 ?>
 <!DOCTYPE html>
 <html>
